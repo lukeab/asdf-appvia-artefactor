@@ -40,7 +40,7 @@ download_release() {
   filename="$2"
 
   # TODO: Adapt the release URL convention for artefactor
-  releases/download/v1.0.5/artefactor_linux_amd64
+  
   url="$GH_REPO/releases/download/v${version}/artefactor_linux_amd64"
 
   echo "* Downloading $TOOL_NAME release $version..."
