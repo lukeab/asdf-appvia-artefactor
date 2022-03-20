@@ -3,7 +3,7 @@
 # asdf-artefactor [![Build](https://github.com/lukeab/asdf-appvia-artefactor/actions/workflows/build.yml/badge.svg)](https://github.com/lukeab/asdf-appvia-artefactor/actions/workflows/build.yml) [![Lint](https://github.com/lukeab/asdf-appvia-artefactor/actions/workflows/lint.yml/badge.svg)](https://github.com/lukeab/asdf-appvia-artefactor/actions/workflows/lint.yml)
 
 
-[artefactor](https://github.com/lukeab/asdf-appvia-artefactor) plugin for the [asdf version manager](https://asdf-vm.com).
+[artefactor](https://github.com/appvia/artefactor) plugin for the [asdf version manager](https://asdf-vm.com).
 
 </div>
 
@@ -48,6 +48,10 @@ artefactor --version
 
 Check [asdf](https://github.com/asdf-vm/asdf) readme for more instructions on how to
 install & manage versions.
+
+# Why
+
+I worked on artefactor years ago and it follow good versioning in its release patterns. So as a test of asdf plugin development :neckbeard: and perhaps for some sort of vanity :love_letter: I wanted to make this plugin for asdf.
 
 # Contributing
 
