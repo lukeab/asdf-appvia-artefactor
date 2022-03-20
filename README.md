@@ -1,6 +1,6 @@
 <div align="center">
 
-# asdf-artefactor [![Build](https://github.com/lukeab/asdf-artefactor/actions/workflows/build.yml/badge.svg)](https://github.com/lukeab/asdf-artefactor/actions/workflows/build.yml) [![Lint](https://github.com/lukeab/asdf-artefactor/actions/workflows/lint.yml/badge.svg)](https://github.com/lukeab/asdf-artefactor/actions/workflows/lint.yml)
+# asdf-artefactor [![Build](https://github.com/lukeab/asdf-appvia-artefactor/actions/workflows/build.yml/badge.svg)](https://github.com/lukeab/asdf-appvia-artefactor/actions/workflows/build.yml) [![Lint](https://github.com/lukeab/asdf-appvia-artefactor/actions/workflows/lint.yml/badge.svg)](https://github.com/lukeab/asdf-appvia-artefactor/actions/workflows/lint.yml)
 
 
 [artefactor](https://github.com/lukeab/asdf-appvia-artefactor) plugin for the [asdf version manager](https://asdf-vm.com).
@@ -27,7 +27,7 @@ Plugin:
 ```shell
 asdf plugin add artefactor
 # or
-asdf plugin add artefactor https://github.com/lukeab/asdf-artefactor.git
+asdf plugin add artefactor https://github.com/lukeab/asdf-appvia-artefactor.git
 ```
 
 artefactor:
@@ -53,7 +53,7 @@ install & manage versions.
 
 Contributions of any kind welcome! See the [contributing guide](contributing.md).
 
-[Thanks goes to these contributors](https://github.com/lukeab/asdf-artefactor/graphs/contributors)!
+[Thanks goes to these contributors](https://github.com/lukeab/asdf-appvia-artefactor/graphs/contributors)!
 
 # License
 

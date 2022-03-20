@@ -3,7 +3,7 @@
 set -euo pipefail
 
 # TODO: Ensure this is the correct GitHub homepage where releases can be downloaded for artefactor.
-GH_REPO="https://github.com/lukeab/asdf-appvia-artefactor"
+GH_REPO="https://github.com/appvia/artefactor"
 TOOL_NAME="artefactor"
 TOOL_TEST="artefactor --version"
 
@@ -31,8 +31,6 @@ list_github_tags() {
 }
 
 list_all_versions() {
-  # TODO: Adapt this. By default we simply list the tag names from GitHub releases.
-  # Change this function if artefactor has other means of determining installable versions.
   list_github_tags
 }
 
@@ -42,7 +40,8 @@ download_release() {
   filename="$2"
 
   # TODO: Adapt the release URL convention for artefactor
-  url="$GH_REPO/archive/v${version}.tar.gz"
+  releases/download/v1.0.5/artefactor_linux_amd64
+  url="$GH_REPO/releases/download/v${version}/artefactor_linux_amd64"
 
   echo "* Downloading $TOOL_NAME release $version..."
   curl "${curl_opts[@]}" -o "$filename" -C - "$url" || fail "Could not download $url"
