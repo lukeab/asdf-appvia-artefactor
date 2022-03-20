@@ -39,8 +39,22 @@ download_release() {
   version="$1"
   filename="$2"
 
+  local platform
+  [ "Linux" = "$(uname)" ] && platform="linux" || platform="darwin"
+
+  local arch
+  machine=$(uname -m)
+  if [[ $machine == "arm64" ]] || [[ $machine == "aarch64" ]]; then
+    arch="arm64"
+    echo "${TOOL_NAME} does not currently support arm architecture" && exit 1
+  elif [[ $machine == *"386"* ]]; then
+    arch="386"
+  else
+    arch="amd64"
+  fi
+
   # TODO: Adapt the release URL convention for artefactor
-  url="$GH_REPO/releases/download/v${version}/artefactor_linux_amd64"
+  url="$GH_REPO/releases/download/v${version}/artefactor_${platform}_${arch}"
 
   echo "* Downloading $TOOL_NAME release $version..."
   curl "${curl_opts[@]}" -o "$filename" -C - "$url" || fail "Could not download $url"
