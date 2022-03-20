@@ -51,7 +51,7 @@ install & manage versions.
 
 # Why
 
-I worked on artefactor years ago and it follow good versioning in its release patterns. So as a test of asdf plugin development :neckbeard: and perhaps for some sort of vanity :love_letter: I wanted to make this plugin for asdf.
+I worked on artefactor years ago and it follows good versioning in its release patterns. So as a test of asdf plugin development :neckbeard: and perhaps for some sort of vanity :love_letter: I wanted to make this plugin for asdf.
 
 # Contributing
 
